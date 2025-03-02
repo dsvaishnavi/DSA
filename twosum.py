@@ -4,7 +4,8 @@ storage={}
 
 for i in nums:
     val=target-i
-    print(val)
+
+    
 
 
     
