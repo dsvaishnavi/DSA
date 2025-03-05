@@ -3,9 +3,7 @@ target=6
 hashmap={}
 
 for i,num in enumerate (nums):
-    
     minus= target-num
-    print(minus)
     if minus in hashmap:
         print(hashmap[minus],i)
     else:
