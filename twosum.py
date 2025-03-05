@@ -1,9 +1,19 @@
-nums=[2,7,11,15]
-target=9
-storage={}
+nums=[3,2,4]
+target=6
+hashmap={}
 
-for i in nums:
-    val=target-i
+for i,num in enumerate (nums):
+    
+    minus= target-num
+    print(minus)
+    if minus in hashmap:
+        print(hashmap[minus],i)
+    else:
+        hashmap[num]=i
+        
+   
+        
+
 
     
 
