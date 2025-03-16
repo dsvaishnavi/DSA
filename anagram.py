@@ -1,14 +1,14 @@
-s="nagaram"
-t="anagram"
-hash={}
+s="a"
+t="ab"
 
-
-if len(s) != len(t):
+if len (s) != len (t):
     print(False)
-else:
-    for i,n in enumerate(s):
-        hash[i] = n
-    print(hash)
+else :
+    hash_s={}
+    hash_t={}
     
-
-    
+    for i in s:
+        hash_s[i] = hash_s.get(i,0)+1
+    for i in t:
+        hash_t[i]=hash_t.get(i,0)+1
+    print(hash_s==hash_t)
