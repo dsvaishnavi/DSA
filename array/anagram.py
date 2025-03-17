@@ -1,5 +1,5 @@
-s="a"
-t="ab"
+s="cat"
+t="nnh"
 
 if len (s) != len (t):
     print(False)
