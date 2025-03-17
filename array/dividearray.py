@@ -14,9 +14,8 @@ for i in freq.values():
     if i % 2 != 0:
         print(False)
         break
-    else:
-        print(True)
-        break
+else:
+    print(True)
 
 
 
