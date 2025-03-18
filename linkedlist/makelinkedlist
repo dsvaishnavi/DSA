@@ -6,8 +6,8 @@ class List:
 #assign value
     
 node1=List(10)
-node2=List(20)
-node3=List(30)
+node2=List(10)
+node3=List(20)
 
 #link it
 
@@ -21,3 +21,4 @@ def PrintList(head):
         current=current.next
     print("end")
 PrintList(node1)
+
