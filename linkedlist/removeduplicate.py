@@ -16,8 +16,6 @@ node2.next = node3
 node3.next = node4
 node4.next = node5
 
-# Remove duplicates (even if not consecutive)
-
 current = node1
 
 while current:
