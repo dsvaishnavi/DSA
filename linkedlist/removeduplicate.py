@@ -1,8 +1,7 @@
 class Node:
     def __init__(self, val=0, next=None):
-        self.val = val  # ✅ Correctly store the value
-        self.next = next  # ✅ Store the next node reference
-
+        self.val = val  
+        self.next = next  
 # Assign values
 node1 = Node(10)
 node2 = Node(10)
