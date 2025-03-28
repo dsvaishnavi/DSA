@@ -14,5 +14,6 @@ def Traverse(head):
 head=Listnode(10)
 head.next=Listnode(1)
 head.next.next=Listnode(2)
+head.next.next.next=Listnode(3)
 Traverse(head)
         
