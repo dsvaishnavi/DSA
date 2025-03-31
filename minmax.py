@@ -14,5 +14,5 @@ def minimax(depth, node_index, is_max, scores, height):
 # Example usage
 scores = [3, 5, 2, 9, 12, 5, 23, 23]  # Leaf node values
 tree_height = math.log2(len(scores))
-optimal_value = minimax(0, 0, True, scores, int(tree_height))
-print("The optimal value is:", optimal_value)
+opti_value = minimax(0, 0, True, scores, int(tree_height))
+print("The optimal value is: ", opti_value)
