@@ -1,4 +1,4 @@
-s=["h","e","l","l","o"]
+s=["h","e","l","l","o","e","t"]
 
 left=0
 right=len(s)-1
