@@ -1,6 +1,5 @@
-haystack = "hello"
-needle = "ll"
-
+haystack = "sadbutsad"
+needle = "sad"
 n= len (needle)
 for i,j in enumerate (haystack):
     f=haystack[i:i+n]
