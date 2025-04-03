@@ -4,7 +4,15 @@ null=""
 for i in nums:
     i=str(i)
     null+=i
-null=len(null)
+
+p=len(null)-1
+
+for i in null:
+    if i < p:
+        null[i],null[p]=null[p],null[i]
+    print(True)
+
 
     
-print(null)
+
+    
