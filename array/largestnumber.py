@@ -1,27 +1,33 @@
-nums = [10,2]
-null=""
-null2=""
-for i in nums:
-    i=str(i)
-    null+=i
+nums = [3, 30, 34, 5, 9]  # Example input
+
+# Convert numbers to strings
+nums = list(map(str, nums)) # because we can't for loop for int / map (function ,iterable)
 
 
-new=list(null)
+# Sort numbers based on concatenated value in descending order
+for i in range(len(nums)):
+    for j in range(i + 1, len(nums)):
+        if nums[i] + nums[j] < nums[j] + nums[i]:  # Swap if needed
+            nums[i], nums[j] = nums[j], nums[i]
 
-leng=len(new)
+# Join sorted numbers to form the largest number
+result = "".join(nums)
 
-for i in range(leng):
-    for j in range(0,leng-i-1):
-        if new[j] < new[j+1]:
-            new[j],new[j+1]=new[j+1],new[j]
+# Handle case where result is all zeros
+nums = [3, 30, 34, 5, 9]  # Example input
 
+# Convert numbers to strings
+nums = list(map(str, nums))
 
+# Sort numbers based on concatenated value in descending order
+for i in range(len(nums)):
+    for j in range(i + 1, len(nums)):
+        if nums[i] + nums[j] < nums[j] + nums[i]:  # Swap if needed
+            nums[i], nums[j] = nums[j], nums[i]
 
-for p in new:
-    null2+=p
-print(null2)
-    
-            
-    
+# Join sorted numbers to form the largest number
+result = "".join(nums)
 
-    
+# Handle case where result is all zeros
+print("0" if result[0] == "0" else result)
+
