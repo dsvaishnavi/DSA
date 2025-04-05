@@ -20,8 +20,7 @@ while i < j:
 result=""
 for char in null:
     result+=char
-
-print(result)
+    
 if result==cleaned:
     print(True)
 else:
