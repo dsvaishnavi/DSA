@@ -1,21 +1,20 @@
 low=1
 high=100
-
 count=0
 
-for num in range(low, high + 1):
+for num in range(low,high+1):
     str_num=str(num)
     
     if len(str_num)%2 !=0:
         continue
     
-    mid= len(str_num) // 2
-    firsthalf=str_num[:mid]
-    last=str_num[mid:]
+    center=len(str_num)//2
+    first_half=str_num[:center]
+    other_half=str_num[center:]
     
-    firsthalf=sum(int(d) for d in firsthalf)
-    last=sum(int(i)for i in last)
+    first_half=sum(int(d) for d in first_half)
+    other_half=sum(int(a)for a in other_half)
     
-    if firsthalf==last:
-        count +=1
+    if first_half==other_half:
+        count+=1
     print(count)
