@@ -1,17 +1,17 @@
-s="()[{}"
+s="()[]{}"
 dict={"(":")","[":"]", "{":"}"}
 stack=[]
 
-for i in s:
-    if i in dict:
-        stack.append(i)
-    elif not stack or dict[stack.pop()] != i:
-            print(False)
-            break
-        
+for a in s:
+    if a in dict:
+        stack.append(a)
+    elif not stack or dict[stack.pop()]!= a:
+        print(False)
+        break
 else:
     if not stack:
-        print(True)
+            print(True)
     else:
-        print(False)    
+            print(False)
+           
         
