@@ -1,0 +1,3 @@
+word="abcdefd"
+ch="d"
+
