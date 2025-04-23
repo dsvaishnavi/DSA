@@ -1,4 +1,4 @@
-word="abcdefd"
+word="abdcef"
 ch="d"
 v=""
 
@@ -8,6 +8,6 @@ if index != -1:
     result=result[::-1]+word[index +1:]
     print(result) 
 else:
-    r
+    print (word)
         
     
