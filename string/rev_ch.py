@@ -3,6 +3,7 @@ hash={}
 
 for i in s:
     if i in hash:
+        print(hash)
         hash[i] +=1
     else:
         hash[i] = 1
